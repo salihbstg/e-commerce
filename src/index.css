@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    content: "";
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: serif;
+}
+input[type="text"]{
+    font-weight: 600;
+    background: linear-gradient(90deg,#ccc,#eee,#ddd);
+}
+input[type="submit"]{
+    cursor: pointer;
+    transition: 0.09s;
+}
+input[type="submit"]:hover{
+    opacity: 0.7;
+}
+label{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: serif;
+}
+h1{
+    font-size: 50px;
+    text-shadow:5px 5px 6px black;
+}
+footer{
+    box-shadow: 0 1px 7px 5px black;
+}
+@media only screen and (max-width:1000px) {
+    h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:650px) {
+    h1{
+        font-size: 30px;
+    }
+}

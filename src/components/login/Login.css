@@ -1,0 +1,69 @@
+#form-div{
+    background:linear-gradient(45deg,#3131f1,#525252,#315261);
+    background-size: 160% 150%;
+    animation: form-anim 3s linear infinite;
+}
+@keyframes form-anim{
+    0%{
+        background-position: 0% 50%;
+    }
+    20%{
+        background-position: 50% 100%;
+    }
+    40%{
+        background-position:100% 100%;
+    }
+    60%{
+        background-position: 100% 50%;
+    }
+    80%{
+        background-position: 50% 0%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#form-div #form-anim-div form div input{
+    outline: none;
+    border-radius: 30px;
+}
+#form-anim-div{
+    background-image: linear-gradient(var(--rotate),#fff,#333,#000);
+    border-radius: 10px;
+    animation: spin 4s linear infinite;
+    width: 25%;
+    
+}
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+#login-form{
+    background: linear-gradient(90deg,#0000f1,#2222ff,#1121ff);
+}
+@media only screen and (max-width:1600px) {
+    #form-anim-div{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:1400px) {
+    #form-anim-div{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1000px) {
+    #form-anim-div{
+        width: 70%;
+    }
+}

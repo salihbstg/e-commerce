@@ -1,0 +1,10 @@
+#products:hover #productsnav{
+    visibility: visible;
+    transform: translate(-80%);
+    opacity: 0.8;
+}
+#categories:hover #catenav{
+    visibility: visible;
+    transform: translate(-70%);
+    opacity: 0.8;
+}
